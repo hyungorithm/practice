@@ -16,8 +16,6 @@ ScriptsOnlyBuild:
     - Photon.Pun.Demo.SlotRacer.PlayerControl
     - Photon.Pun.Demo.SlotRacer.Utils.SplineWalker
     PhotonUnityNetworking.Editor.dll:
-    - Photon.Pun.PhotonTransformViewEditor
-    - Photon.Pun.PhotonViewInspector
     - Photon.Pun.PunSceneSettings
     PhotonUnityNetworking.dll:
     - Photon.Pun.PhotonAnimatorView
@@ -116,35 +114,35 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3202}
     - Class: 114
-      Script: {instanceID: 4102}
+      Script: {instanceID: 3226}
     - Class: 114
       Script: {instanceID: 4104}
     - Class: 114
-      Script: {instanceID: 4288}
+      Script: {instanceID: 4106}
     - Class: 114
-      Script: {instanceID: 4332}
+      Script: {instanceID: 4290}
     - Class: 114
-      Script: {instanceID: 5456}
+      Script: {instanceID: 4334}
     - Class: 114
-      Script: {instanceID: 5482}
+      Script: {instanceID: 5458}
     - Class: 114
-      Script: {instanceID: 5948}
+      Script: {instanceID: 5484}
     - Class: 114
-      Script: {instanceID: 5996}
+      Script: {instanceID: 5950}
     - Class: 114
-      Script: {instanceID: 6742}
+      Script: {instanceID: 5998}
     - Class: 114
-      Script: {instanceID: 7386}
+      Script: {instanceID: 6744}
     - Class: 114
-      Script: {instanceID: 7938}
+      Script: {instanceID: 7388}
     - Class: 114
-      Script: {instanceID: 8330}
+      Script: {instanceID: 7940}
     - Class: 114
-      Script: {instanceID: 8468}
+      Script: {instanceID: 8332}
     - Class: 114
-      Script: {instanceID: 8810}
+      Script: {instanceID: 8470}
     - Class: 114
-      Script: {instanceID: 33072}
+      Script: {instanceID: 8812}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -588,6 +586,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: Photon.Chat.Demo
     className: ChannelSelector
+  - hash:
+      serializedVersion: 2
+      Hash: a064ddaf8f981efc803a1fc5f62ef4f0
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CameraFollow
   - hash:
       serializedVersion: 2
       Hash: c656dcc13ae391b68d594cc8f9c590b0
@@ -1854,12 +1858,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
-  - hash:
-      serializedVersion: 2
-      Hash: a064ddaf8f981efc803a1fc5f62ef4f0
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: CameraFollow
   platform: 19
   scenePathNames:
   - Assets/Scenes/SampleScene.unity

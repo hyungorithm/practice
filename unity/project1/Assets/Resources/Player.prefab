@@ -942,7 +942,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 80
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!136 &6624356144353345127
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -970,6 +970,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 15
+  weapons: []
+  hasWeapons: 
+  ammo: 0
+  coin: 0
+  health: 70
+  hasGrenades: 0
+  maxAmmo: 999
+  maxCoin: 99999
+  maxHealth: 100
+  maxHasGrenades: 99999999
 --- !u!114 &6624356144353345113
 MonoBehaviour:
   m_ObjectHideFlags: 0
