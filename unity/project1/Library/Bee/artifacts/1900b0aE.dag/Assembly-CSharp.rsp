@@ -382,7 +382,9 @@
 "Assets/Photon/PhotonChat/Demos/DemoChat/NamePickGui.cs"
 "Assets/Photon/PhotonRealtime/Demos/DemoLoadBalancing/ConnectAndJoinRandomLb.cs"
 "Assets/QuarterView 3D Action BE5/ReadMe/Scripts/ReadmeBE5.cs"
+"Assets/Scripts/CameraFollow.cs"
 "Assets/Scripts/Follow.cs"
+"Assets/Scripts/PhotonManager.cs"
 "Assets/Scripts/Player.cs"
 -langversion:9.0
 

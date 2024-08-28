@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Photon.Pun;
+using Photon.Realtime;
 
 public class Player : MonoBehaviour
 {
@@ -9,8 +11,9 @@ public class Player : MonoBehaviour
     float vAxis;
     bool wDown;
     bool jDown;
-
     bool isJump;
+
+    private PhotonView pv;
 
     Vector3 moveVec;
 
@@ -19,16 +22,25 @@ public class Player : MonoBehaviour
 
     void Awake()
     {
+        pv = GetComponent<PhotonView>();
         rigid = GetComponent<Rigidbody>();
         anim = GetComponentInChildren<Animator>();
+
+        if (!pv.IsMine)
+        {
+            GetComponent<PhotonAnimatorView>().enabled = true;
+        }
     }
 
     void Update()
     {
-        GetInput();
-        Move();
-        Turn();
-        Jump();
+        if (pv.IsMine)
+        {
+            GetInput();
+            Move();
+            Turn();
+            Jump();
+        }
     }
 
     void GetInput()
@@ -42,7 +54,6 @@ public class Player : MonoBehaviour
     void Move()
     {
         moveVec = new Vector3(hAxis, 0, vAxis).normalized;
-
         transform.position += moveVec * speed * (wDown ? 0.6f : 2f) * Time.deltaTime;
 
         anim.SetBool("isRun", moveVec != Vector3.zero);
